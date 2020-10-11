@@ -5,12 +5,23 @@ Hello [Apache Beam](https://beam.apache.org/) using Python.
 ## Setup
 
 ```
-$ make setup
+$ python3 -m venv venv
 
-# activateする
+# 仮想環境をactivate
 # fishの場合
 $ source ./venv/bin/activate.fish
 
 # Apach Beam SDK等pythonパッケージのinstall
-$ make install
+$ pip install google-cloud-storage
+$ pip install apache-beam[gcp]
+```
+
+## Run examples
+
+### WordCount
+
+```
+$ cd src/examples/wordcount
+$ python main.py --input=./input.txt --output=./output.txt
+$ python main.py --output=./output.txt
 ```
