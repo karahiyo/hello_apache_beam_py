@@ -18,6 +18,17 @@ $ pip install apache-beam[gcp]
 
 ## Run examples
 
+### ParDo with a simple DoFn
+
+```
+$ python src/examples/pardo/main.py
+🍓Strawberry
+🥕Carrot
+🍆Eggplant
+🍅Tomato
+🥔Potato
+```
+
 ### WordCount
 
 ```
